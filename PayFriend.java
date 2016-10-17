@@ -5,9 +5,11 @@ public class PayFriend{
         double total_money = IO.readDouble();
         double total_fee;
         
-        if (total_money < 100){
-            IO.outputDoubleAnswer(0);
-        }else if(total_money >= 100 && total_money< 1000) {
+ 
+        
+        if (total_money =< 100){
+            IO.outputDoubleAnswer(5);
+        }else if(total_money > 100 && total_money< 1000) {
             double x = total_money * 0.03;
             double y = 6;
             if (x > y){
