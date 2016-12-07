@@ -12,9 +12,7 @@ public class AIPlayer1 implements Player{
 	int placeCol = 0;
 	int run = 0;
 	
-	
-	
-	
+
 	//constructor takes the player id for this player, and the number of 
 	// rows and columns of the board we're playing on
 	public AIPlayer1(int playerID, int row, int col){
@@ -44,20 +42,13 @@ public class AIPlayer1 implements Player{
             }
     }
     
-    
-    
-    
-    
-    
-    
+
 	//returns column of where to play a token
 	public int playToken(){
+		
 		Random ran = new Random();
 		int choice = ran.nextInt(7);
-		
- 
 
-		
 		while(choice< 0 || choice>col-1 || getToken(0,choice) != '0'){
 			choice = ran.nextInt(7);
 		}
@@ -71,9 +62,7 @@ public class AIPlayer1 implements Player{
             }
             
 		return choice;
-		
-
-		
+	
 	}
 	
 	public char getToken(int row, int col){
@@ -85,19 +74,6 @@ public class AIPlayer1 implements Player{
         
         
     }
-
-	
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	
 	//get this player's id
 	public int getPlayerID(){
