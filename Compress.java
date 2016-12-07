@@ -1,7 +1,7 @@
 public class Compress{
     
     public static void main(String[] args){
-        System.out.println(compress("q"));
+        System.out.println(compress("      "));
 
 
     }
@@ -29,7 +29,7 @@ public class Compress{
                     i = 0;
 
                 }
-            }
+            } 
         }
         
         return x.substring(1,x.length());
